@@ -1,0 +1,17 @@
+{
+  "name": "evalo",
+  "displayName": "evalo",
+  "expo": {
+    "name": "evalo",
+    "slug": "evalo",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
