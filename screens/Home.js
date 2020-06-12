@@ -172,14 +172,8 @@ function Home(props) {
               }}
             >
               <StyledButton
-                style={{
-                  width: Layout.isSmallDevice ? 50 : 70,
-                  height: Layout.isSmallDevice ? 50 : 70,
-                }}
-                buttonStyle={{
-                  width: Layout.isSmallDevice ? 50 : 70,
-                  height: Layout.isSmallDevice ? 50 : 70,
-                }}
+                style={styles.btnContainer}
+                buttonStyle={styles.btnContainer}
                 onPress={() => {
                   props.navigation.push("Settings");
                 }}
@@ -190,14 +184,8 @@ function Home(props) {
                 ></Ionicons>
               </StyledButton>
               <StyledButton
-                style={{
-                  width: Layout.isSmallDevice ? 50 : 70,
-                  height: Layout.isSmallDevice ? 50 : 70,
-                }}
-                buttonStyle={{
-                  width: Layout.isSmallDevice ? 50 : 70,
-                  height: Layout.isSmallDevice ? 50 : 70,
-                }}
+                style={styles.btnContainer}
+                buttonStyle={styles.btnContainer}
                 onPress={() => {
                   props.navigation.push("Messages");
                 }}
@@ -228,5 +216,9 @@ const styles = StyleSheet.create({
   icon: {
     fontSize: Layout.isSmallDevice ? 24 : 32,
     alignSelf: "center",
+  },
+  btnContainer: {
+    width: Layout.isSmallDevice ? 50 : 70,
+    height: Layout.isSmallDevice ? 50 : 70,
   },
 });

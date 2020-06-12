@@ -37,12 +37,14 @@ target 'evalo' do
   pod 'Folly', :podspec => "#{rnPrefix}/third-party-podspecs/Folly.podspec"
 
   # Other native modules
+  pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
 
   # Automatically detect installed unimodules
   use_unimodules!
 
   # react-native-cli autolinking
   use_native_modules!
+
 
 
 
